@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+
+body#jingxuan{
+  background: #2C2C2C;
+  url(../images/icons.png) !important;  
+}
+
+@media only screen and (min-width : 998px) {
+  #jingxuan > .pusher {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  #jingxuan > .pusher > .full.height {
+    flex: 1;
+  }
+}
+
+#jingxuan > .pusher > .footer {
+  margin: 0em;
+  border-radius: 0em;
+  padding: 4em 0em 5em;
+}
+
+#jingxuan:not(.site) > .pusher > .full.height {
+  background-color: #F7F7F7;
+}
+
+#jingxuan .tab.header.segment {
+  padding-bottom: 0em;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+#jingxuan .header.segment {
+  position: relative;
+  z-index: 2;
+  margin: 0em;
+  min-height: 185px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#jingxuan .header.segment h1 {
+  margin-bottom: 0em;
+}
+
+p {
+  margin: 1em 0em;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+
+#jingxuan .main.container {
+  background-color: #FFFFFF;
+  margin: 0em auto;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 2em 2em 7em;
+  z-index: 1;
+}
+
+#jingxuan .container {
+  position: relative;
+  width: 915px;
+  margin: 0px auto;
+}
+
+@media only screen and (min-width : 998px) {
+  #jingxuan .following.menu {
+    display: block;
+  }
+  #jingxuan .container {
+    right: 110px;
+  }
+}
+
+@media only screen and (min-width : 1355px) {
+  #jingxuan .container {
+    width: 850px;
+  }
+}
+
+#jingxuan .main.container > .tab > .right.rail .sticky {
+  padding: 2em 0em;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#jingxuan .introduction {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  #jingxuan .introduction {
+    display: block;
+  }
+}
+
+#jingxuan .following.menu .item .menu {
+  margin: 0em;
+}
+
+#jingxuan .following.menu .menu .active.item {
+  font-weight: bold;
+}
+
+#jingxuan .following.menu .menu .item {
+  margin: 0em;
+  padding: 0.5rem 0.25rem;
+}
