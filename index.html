@@ -2,29 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Insert title here</title>
+  <title>Home page</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./css/defined.css">
-  <script src="./js/less.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
-  <script src="./js/jquery-2.1.1.min.js"></script>
-  <script src="./js/semantic.min.js"></script>
+  <link rel="stylesheet" href="./css/semantic.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/defined.css">
 </head>
 <body id="jingxuan" class="Grid pushable" ontouchstart>
-
+  <div id="header" class="tab header segment header--fixed">
+      <div class="container">
+        <div class="introduction">
+          <h1 class="ui header">This Is My Blog's Subject</h1>
+          <p>This Is My Blog's Describe</p>
+          <div class="ui divider"></div>
+        </div>
+      </div>
+  </div>
 <div class="pusher">
   <div class="full height">
-   <div class="tab header segment">
-    <div class="container">
-      <div class="introduction">
-        <h1 class="ui header">页面布局</h1>
-        <p>这是我们的第一个页面的布局。</p>
-        <div class="ui divider"></div>
-      </div>
-    </div>
-   </div>
-   
+    
    <div class="main container">
      <div class="ui intro tab active" data-tab="overview">
        <div class="ui close right rail" style="height: 6405px;">
@@ -50,22 +47,39 @@
          </div>
        </div>
        
-       <h2 class="ui dividing header">Introduction<a class="anchor" id="introduction"></a></h2>
+       <h3 class="ui dividing center aligned header">
+         <div class="ui primary inverted segment">
+                    This Is My Blog's Title
+         </div>
+       </h3>
        <div class="highlighted example">
-        <h4 class="ui header">Why Use Grids?</h4><i class="icon code"></i><a class="anchor" id="why-use-grids"></a>
-        <div class="ignored">
-          <p>A grid is a structure, with a <a href="http://99designs.com/designer-blog/2013/03/21/history-of-the-grid-part-1/" target="_blank">very rich history</a> used to align negative space in your design.</p>
-          <p>Using a grid makes content appear to flow naturally on your page, and allows you to quickly adjust layouts without assigning specific sizes directly to content elements, letting you rapidly prototype and design your page.</p>
+        <h4 class="ui right aligned header">
+          <div class="ui grid">
+            <div class="eight wide column"></div>
+            <div class="eight wide column">
+              <div class="ui grid column">
+                <div class="nine wide column">
+                  <div class="ui horizontal segment">
+                    <i class="calendar medium icon"></i>Created at 2014-12-1
+                  </div>
+                </div>
+                <div class="seven wide column">
+                  <div class="ui horizontal segment">
+                    <i class="thumbs up medium icon"></i> Rating is 2000
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h4>
+         
+         <div class="ui piled tertiary green attached segment">
+           <h4 class="ui header">A header</h4>
+           <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+           <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+           <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
         </div>
-        <div class="ui ignored info message">
-          <p>All grid systems use an arbitrary column count. Semantic's default theme assumes <b>16 columns</b>. This number can be adjusted in your project by adjust the <code>@columnCount</code> value in <code>site.variables</code>.</p>
-        </div>
-        <div class="ui grid">
-          <div class="four wide column"></div>
-          <div class="four wide column"></div>
-          <div class="four wide column"></div>
-          <div class="four wide column"></div>
-       </div>
+        
       </div>
      </div>
    </div>
@@ -75,28 +89,44 @@
     <div class="container">
       <div class="ui stackable inverted divided relaxed grid">
         <div class="eight wide column">
-          <h3 class="ui inverted header">帮助我们做的更好</h3>
+          <h3 class="ui inverted header">Help Us Make Much Better</h3>
         </div>
         <div class="four wide column">
-          <h5 class="ui teal inverted header">贡献</h5>
+          <h5 class="ui teal inverted header">Contribute</h5>
           <div class="ui inverted link list">
-            <a class="item" href="mailto:test123@qq.com?subject=Help Translating">邮件</a>
-            <a class="item" href="#" target="_blank">问题跟踪</a>
-            <a class="item" href="#" target="_blank">测试1</a>
-            <a class="disabled item">测试1</a>
+            <a class="item" href="mailto:test123@qq.com?subject=Help Translating">Email to us</a>
+            <a class="item" href="#" target="_blank">Issues Tracking</a>
+            <a class="disabled item">Other Items</a>
           </div>
         </div>
         <div class="four wide column">
-          <h5 class="ui teal inverted header">社交分享</h5>
+          <h5 class="ui teal inverted header">Social Share</h5>
           <div class="ui inverted link list">
-            <a class="disabled item">QQ分享</a>
-            <a class="disabled item">微信分享</a>
+            <div class="item">
+              <i class="qq big icon"></i>
+              <div class="content">
+                <a class="header">QQ Share</a>
+                <div class="description">You can share this blog with your qq friends.</div>
+              </div>
+            </div>
+            <div class="item">
+              <i class="wechat big icon"></i>
+              <div class="content">
+                <a class="header">Wechat Share</a>
+                <div class="description">You can share this blog with you webchat friends.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 </body>
 </html>
+<script src="./js/less.min.js"></script>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/semantic.min.js"></script>
+<script src="./js/headroom.js"></script>
+<script src="./js/jQuery.headroom.js"></script>
+<script src="./js/defined.js"></script>

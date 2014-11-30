@@ -2,7 +2,7 @@
 
 body#jingxuan{
   background: #2C2C2C;
-  url(../images/icons.png) !important;  
+  url(../images/icons.png) !important;
 }
 
 @media only screen and (min-width : 998px) {
@@ -10,6 +10,8 @@ body#jingxuan{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    top: 13em;
+    overflow: hidden;
   }
 
   #jingxuan > .pusher > .full.height {
@@ -23,6 +25,10 @@ body#jingxuan{
   padding: 4em 0em 5em;
 }
 
+#jingxuan > .pusher > .footer {
+  clear: both;
+}
+
 #jingxuan:not(.site) > .pusher > .full.height {
   background-color: #F7F7F7;
 }
@@ -33,8 +39,8 @@ body#jingxuan{
 }
 
 #jingxuan .header.segment {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 10;
   margin: 0em;
   min-height: 185px;
   padding-top: 70px;
@@ -66,7 +72,7 @@ p:last-child {
   border-right: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
   padding: 2em 2em 7em;
-  z-index: 1;
+  z-index: 1001;
 }
 
 #jingxuan .container {
@@ -119,4 +125,12 @@ p:last-child {
 #jingxuan .following.menu .menu .item {
   margin: 0em;
   padding: 0.5rem 0.25rem;
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
 }
