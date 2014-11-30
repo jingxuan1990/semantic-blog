@@ -1,10 +1,4 @@
 semantic-blog
 =============
-##我们的目标
-本程序的目的是建立一个一简单博客为核心的社交分享平台。我们可以在社交分享和实时沟通的情况下，分享我的喜悦。
 
-###我们正在进行
-1.  开发发表博文的时间轴
-2.  开发WebScoket的通信界面
-
- 
+A simple blog system using semantic css framework
