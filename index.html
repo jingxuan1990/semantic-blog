@@ -5,42 +5,72 @@
   <title>Home page</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/semantic.min.css">
   <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="./css/defined.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
-<body id="jingxuan" class="Grid pushable" ontouchstart>
-  <div id="header" class="tab header segment header--fixed">
-      <div class="container">
-        <div class="introduction">
-          <h1 class="ui header">This Is My Blog's Subject</h1>
-          <p>This Is My Blog's Describe</p>
-          <div class="ui divider"></div>
-        </div>
-      </div>
+<body id="jingxuan" class="pushable">
+<!-- sidebar -->
+<div class="ui left vertical inverted sidebar menu">
+  <div class="item">
+    <div class="ui small  inverted header">Items 1</div>
+    <div class="menu">
+      <a class="item">item 1111111111</a>
+      <a class="item">item 1</a>
+      <a class="item">item 1</a>
+      <a class="item">item 1</a>
+    </div>
   </div>
+</div>
+<div class="ui black big launch right attached fixed button" id="siderbar-btn">
+    <i class="content icon"></i>
+    <span class="text">Menu</span>
+</div>
 <div class="pusher">
   <div class="full height">
-    
-   <div class="main container">
-     <div class="ui intro tab active" data-tab="overview">
-       <div class="ui close right rail" style="height: 6405px;">
-         <div class="ui sticky transition visible" style="left: 1293.5px; width: 300px; height: 407px;">
+  
+  <div id="header" class="tab header segment fixed">
+        <div class="container">
+          <div class="introduction">
+            <h1 class="ui header">This Is My Blog's Subject</h1>
+            <p>This Is My Blog's Describe</p>
+          </div>
+          <div class="ui divider"></div>
+        </div>
+        <!--  <div class="ui right internal rail center aligned">
+          <div class="user-info">
+              <img class="ui tiny image" src="./images/icons.png">
+              <div class="ui label">
+                Wenhao Li
+              </div>
+          </div>
+        </div>
+        -->
+  </div>
+  
+  <div class="main container">
+     <div class="ui intro tab active" id="show-top">
+       <div class="ui close right rail">
+         <div class="ui sticky transition visible" >
            <div class="ui secondary vertical following fluid accordion menu">
-             <div class="item active">
-               <a class="active title"><i class="dropdown icon"></i> <b>博客分类</b></a>
-               <div class="active content menu">
-                 <a class="item active" href="#">心情日记</a>
-                 <a class="item" href="#">古典文学</a>
+             <div class="item">
+               <a class="title active"><b>Top 10(All)</b></a>
+               <div class="menu">
+                 <a class="item" href="#">My heart will go on</a>
+                 <a class="item" href="#">Image without you</a>
+                 <a class="item" href="#">I believe</a>
+                 <a class="item" href="#">Come on, Guys</a>
                </div>
              </div>
              <div class="item">
-               <a class="title active"><i class="dropdown icon"></i> <b>计算机博文</b></a>
-               <div class="content menu active">
-                 <a class="item" href="#" style="opacity: 1;">Java</a>
-                 <a class="item" href="#" style="opacity: 1;">C++</a>
-                 <a class="item" href="#" style="opacity: 1;">C#</a>
-                 <a class="item" href="#" style="opacity: 1;">PHP</a>
+               <a class="title active"><b>Top 10(Myself)</b></a>
+               <div class="menu">
+                 <a class="item" href="#">My heart will go on</a>
+                 <a class="item" href="#">Image without you</a>
+                 <a class="item" href="#">I believe</a>
+                 <a class="item" href="#">Come on, Guys</a>
                </div>
              </div>
            </div>
@@ -79,12 +109,42 @@
            <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
            <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
         </div>
+        <!--  divider(comments if the current viewer is myself, I have the abiltity of closing comment feature) -->
+        <div class="ui section divider"></div>
+        This is our comment section(<a href="#">Write Comment</a>):
+        <div class="ui celled list">
+          <div class="item">
+            <img class="ui avatar image" src="./images/icons.png">
+            <div class="content">
+              <div class="header">Snickerdoodle</div>
+            </div>
+            <div class="content">
+            An excellent companionAn excellent companionAn excellent companionAn excellent companion
+            An excellent companionAn excellent companionAn excellent companionAn excellent companion
+            </div>
+          </div>
+          <div class="item">
+            <img class="ui avatar image" src="./images/icons.png">
+            <div class="content">
+              <div class="header">Poodle</div>
+            </div>
+            <div class="content">Hello World</div>
+          </div>
+          <div class="item">
+            <img class="ui avatar image" src="./images/icons.png">
+            <div class="content">
+              <div class="header">Paulo</div>
+              He's also a dog
+            </div>
+          </div>
+        </div>
         
       </div>
      </div>
    </div>
   </div>
   
+  <!-- bottom content -->
   <div class="ui vertical inverted black footer segment">
     <div class="container">
       <div class="ui stackable inverted divided relaxed grid">
@@ -122,11 +182,8 @@
     </div>
   </div>
 </div>
-</body>
-</html>
-<script src="./js/less.min.js"></script>
 <script src="./js/jquery-2.1.1.min.js"></script>
 <script src="./js/semantic.min.js"></script>
-<script src="./js/headroom.js"></script>
-<script src="./js/jQuery.headroom.js"></script>
 <script src="./js/defined.js"></script>
+</body>
+</html>

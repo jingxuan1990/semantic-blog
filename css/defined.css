@@ -5,42 +5,9 @@ body#jingxuan{
   url(../images/icons.png) !important;
 }
 
-@media only screen and (min-width : 998px) {
-  #jingxuan > .pusher {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    top: 13em;
-    overflow: hidden;
-  }
-
-  #jingxuan > .pusher > .full.height {
-    flex: 1;
-  }
-}
-
-#jingxuan > .pusher > .footer {
-  margin: 0em;
-  border-radius: 0em;
-  padding: 4em 0em 5em;
-}
-
-#jingxuan > .pusher > .footer {
-  clear: both;
-}
-
-#jingxuan:not(.site) > .pusher > .full.height {
-  background-color: #F7F7F7;
-}
-
-#jingxuan .tab.header.segment {
-  padding-bottom: 0em;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
-}
-
-#jingxuan .header.segment {
-  position: fixed;
-  z-index: 10;
+#jingxuan #header.segment {
+  postion: relative;
+  z-index: 2;
   margin: 0em;
   min-height: 185px;
   padding-top: 70px;
@@ -52,6 +19,26 @@ body#jingxuan{
 
 #jingxuan .header.segment h1 {
   margin-bottom: 0em;
+}
+
+#jingxuan .tab.header.segment {
+  padding-bottom: 0em;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+#jingxuan > .pusher > .footer {
+  margin: 0em;
+  border-radius: 0em;
+  padding: 4em 0em 5em;
+  clear: both;
+}
+
+#jingxuan .main.container:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
 }
 
 p {
@@ -72,13 +59,81 @@ p:last-child {
   border-right: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
   padding: 2em 2em 7em;
-  z-index: 1001;
+  
+}
+
+#jingxuan .main.container > .tab > .right.rail .sticky {
+  padding: 2em 0em;
+  height: auto;
 }
 
 #jingxuan .container {
   position: relative;
   width: 915px;
   margin: 0px auto;
+}
+
+#jingxuan .following.menu .menu .active.item {
+  font-weight: bold;
+}
+
+#jingxuan .following.menu .item .menu {
+  margin: 0em;
+}
+
+#jingxuan .following.menu .menu .item {
+  margin: 0em;
+  padding: 0.5rem 0.25rem;
+}
+
+@media only screen and (max-width : 600px) {
+  #jingxuan > .pusher > .footer {
+    padding: 2em 0em;
+  }
+  #jingxuan .container {
+    width: auto;
+    margin: 0em 1rem;
+  }
+  #jingxuan .main.container {
+    padding: 1em;
+    box-shadow: none;
+  }
+  #jingxuan .header.segment {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 998px) {
+  #jingxuan .container {
+    width: auto;
+    margin: 0em 2rem;
+  }
+  #jingxuan .header .button {
+    margin-bottom: 0.5em;
+  }
+  #jingxuan .main.container {
+    padding: 1em 2em;
+  }
+}
+
+@media only screen and (max-width : 998px) {
+
+  #jingxuan > .pusher {
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+  #jingxuan > .pusher > .full.height {
+    display: block;
+    height: auto;
+    
+    overflow: hidden;
+  }
+  #jingxuan .following.menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-width : 998px) {
@@ -88,6 +143,44 @@ p:last-child {
   #jingxuan .container {
     right: 110px;
   }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  #jingxuan .introduction {
+    display: block;
+  }
+  
+}
+
+@media only screen and (min-width : 998px) and (max-width: 1200px) {
+  #jingxuan .header.segment .container {
+    width: 878px;
+    right: -24px;
+  }
+  #jingxuan .container {
+    width: 680px;
+    right: 75px;
+    margin: 0em auto;
+  }
+  #jingxuan .container .right.rail {
+    width: 200px;
+    padding-left: 0em;
+  }
+  
+}
+
+@media only screen and (min-width : 1200px) and (max-width: 1355px) {
+  #jingxuan .container {
+    width: 850px;
+    right: 128px;
+    margin: 0em auto;
+  }
+  
+  #jingxuan .container .right.rail {
+    width: 300px;
+    padding-left: 0em;
+  }
 }
 
 @media only screen and (min-width : 1355px) {
@@ -96,23 +189,19 @@ p:last-child {
   }
 }
 
-#jingxuan .main.container > .tab > .right.rail .sticky {
-  padding: 2em 0em;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
 #jingxuan .introduction {
   display: table-cell;
   vertical-align: top;
   width: 100%;
 }
 
-@media only screen and (min-width: 1200px) {
-  #jingxuan .introduction {
-    display: block;
-  }
+#header .user-info{
+    top: 10px;
+    height: 122px;
+    width: 2000px;
+    margin-top: 10px;
 }
+
 
 #jingxuan .following.menu .item .menu {
   margin: 0em;
@@ -127,10 +216,94 @@ p:last-child {
   padding: 0.5rem 0.25rem;
 }
 
-.header--fixed {
+
+#jingxuan .fixed.launch.button {
   position: fixed;
-  z-index: 10;
+  top: 63px;
+  left: -1px;
+  width: 55px;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -moz-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -o-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -ms-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+}
+
+#jingxuan .fixed.launch.button .text {
+  position: absolute;
+  white-space: nowrap;
+  top: auto;
+  left: 54px;
+  opacity: 0;
+  -webkit-transition:
+    0.3s opacity 0.3s
+  ;
+  -moz-transition:
+    0.3s opacity 0.3s
+  ;
+  -o-transition:
+    0.3s opacity 0.3s
+  ;
+  -ms-transition:
+    0.3s opacity 0.3s
+  ;
+  transition:
+    0.3s opacity 0.3s
+  ;
+}
+#jingxuan .fixed.launch.button:hover {
+  width: 120px;
+}
+#jingxuan .fixed.launch.button:hover .text {
+  opacity: 1;
+}
+
+.user-avatar{
+  float: right;
+  width: 30px;
+  height: 50px;
   right: 0;
-  left: 0;
-  top: 0;
+  border: 1px solid red;
+  z-index: 20000;
+}
+
+/*******************************
+          Responsive
+*******************************/
+
+@media only screen and (min-width: 1200px) {
+  #jingxuan .introduction {
+    display: block;
+  }
+}
+
+@media only screen and (min-width : 998px) {
+  #jingxuan > .pusher {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #jingxuan > .pusher > .full.height {
+    flex: 1;
+  }
 }
